@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+        <!-- My CSS-->
+        <link rel="stylesheet" href="cssFile.css" type="text/css">
+        <!-- jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row one-line">
+                <div class="header">
+                    <h4 id="name"> </h4>
+                </div>
+                <div class="btn-group buttons">
+                    <button id="start" type="button" class="btn btn-primary"> Start Test </button>
+                    <button id="print" type="button" class="btn btn-primary" onclick="window.print()" disabled="true"> Print Results </button>
+                </div>
+            </div>
+            <br>
+            
+           
+            <br>
+            <table class="table table-bordered table-condensed">
+                <thead>
+                  <tr class="info">
+                    <th>Speed (WPM)</th>
+                    <th>Errors</th>
+                    <th>Accuracy</th>
+                    <th> Timer </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="speed"> ... </td>
+                    <td id="errors"> ... </td>
+                    <td id="accuracy"> ... </td>
+                    <td id='timer'><span id="minutes">00</span>:<span id="seconds">00</span> </td>
+                  </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="form-group area1">
+                <label for="area1" id="area1_label">Rules:</label>
+                <div id="area1"></div>
+            </div>
+            <br>
+            <div class="form-group area2">
+                <label for="area2">Typing area:</label>
+                <textarea id="area2" class="form-control" rows="2"></textarea>
+            </div>
+            <br>
+            <div class="btn-group buttons">
+                <button id="stop" type="button" class="btn btn-danger">Stop</button>
+            </div>
+            <div>
+                <button id="github" type="button" class="btn btn-primary"><a href="https://github.com/millerox/TypingTest">GitHub</a></button>
+            </div>
+         </div>
+        <script type="text/javascript" src="Styling.js"></script>
+        <script type="text/javascript" src="Typing-Results.js"></script>
+        <script type="text/javascript" src="Typing-Timer.js"></script>
+        <script type="text/javascript" src="Typing-TextArea_1.js"></script>
+        <script type="text/javascript" src="Typing-TextArea_2.js"></script>
+        <script type="text/javascript" src="Typing-Mediator.js"></script>
+    </body>
+</html>
